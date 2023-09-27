@@ -33,7 +33,7 @@ const saveData = throttle(event => {
 form.addEventListener('input', saveData);
 form.addEventListener('submit', event => {
   event.preventDefault();
-  console.log(inputObj);
   localStorage.clear();
   form.reset();
+  console.log(inputObj);
 });
